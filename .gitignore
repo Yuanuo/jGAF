@@ -1,3 +1,19 @@
+# maven
+/target
+
+# eclipse
+/.settings
+/.classpath
+/.project
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+
+# misc
 /distrib
 /doc
 /lib
