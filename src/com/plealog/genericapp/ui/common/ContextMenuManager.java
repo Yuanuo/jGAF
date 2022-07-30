@@ -14,6 +14,8 @@
  */
 package com.plealog.genericapp.ui.common;
 
+import com.plealog.genericapp.ui.starter.EZEnvironmentImplem;
+
 import java.awt.Font;
 import java.util.List;
 
@@ -31,7 +33,7 @@ public class ContextMenuManager {
   private JPopupMenu _contextMenu;
   private JComponent _parent;
 
-  private static final Font DEF_FNT = new Font("Arial", Font.PLAIN, 10);
+  private static final Font DEF_FNT = new Font("Arial", Font.PLAIN, EZEnvironmentImplem.getMainFontSize() - 2);
 
   /**
    * Constructor.

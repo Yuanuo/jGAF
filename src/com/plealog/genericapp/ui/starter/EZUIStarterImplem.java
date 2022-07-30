@@ -50,7 +50,7 @@ public class EZUIStarterImplem {
 			JMenuBar   menuBar = null;
 			EZEnvironment.setParentFrame(this);
 			
-	    	EZActionManager aManager = EZEnvironment.getActionsManager();
+	    	EZActionManager aManager = EZEnvironmentImplem.isMainMenuBarDisabled() ? null : EZEnvironment.getActionsManager();
 	    	if (aManager!=null){
 	        	menuBar = aManager.createMenubar();
 	    	}

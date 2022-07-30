@@ -63,6 +63,7 @@ public abstract class EZEnvironmentImplem {
 
   /** generic font for the entire GUI */
   private static Font                _mainFont;
+  private static int                 _mainFontSize = 14;
   private static Color               _systemTextColor   = Color.BLACK;
 
   /** generic font for the entire GUI */
@@ -116,6 +117,7 @@ public abstract class EZEnvironmentImplem {
   private static String               _masterConfigurationFile;
   private static Frame                _parent;
   private static boolean              _confirmBeforeExit = true;
+  private static boolean              _mainMenuBarDisabled = false;
 
   static {
     _imgClasses.add(EZEnvironmentImplem.class);
@@ -781,4 +783,23 @@ public abstract class EZEnvironmentImplem {
     _confirmBeforeExit = confirm;
   }
 
+  public static void setMainFont(Font mainFont) {
+    _mainFont = mainFont;
+  }
+
+  public static void setMainFontSize(int mainFontSize) {
+    _mainFontSize = mainFontSize;
+  }
+
+  public static int getMainFontSize() {
+    return _mainFontSize;
+  }
+
+  public static void setMainMenuBarDisabled() {
+    _mainMenuBarDisabled = true;
+  }
+
+  public static boolean isMainMenuBarDisabled() {
+    return _mainMenuBarDisabled;
+  }
 }

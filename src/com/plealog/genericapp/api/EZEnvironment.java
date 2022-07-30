@@ -16,6 +16,7 @@ package com.plealog.genericapp.api;
 
 import java.awt.Color;
 import java.awt.Component;
+import java.awt.Font;
 import java.awt.Frame;
 import java.util.List;
 import java.util.ResourceBundle;
@@ -387,5 +388,17 @@ public class EZEnvironment {
    */
   public static Color getSystemTextColor() {
     return EZEnvironmentImplem.getSystemTextColor();
+  }
+
+  public static void setMainFont(Font mainFont) {
+    EZEnvironmentImplem.setMainFont(mainFont);
+  }
+
+  public static void setMainFontSize(int mainFontSize) {
+    EZEnvironmentImplem.setMainFontSize(mainFontSize);
+  }
+
+  public static void setMainMenuBarDisabled() {
+    EZEnvironmentImplem.setMainMenuBarDisabled();
   }
 }

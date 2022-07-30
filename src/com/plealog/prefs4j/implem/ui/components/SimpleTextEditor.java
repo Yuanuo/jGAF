@@ -87,7 +87,7 @@ public class SimpleTextEditor extends JPanel {
 	             return new StyledEditorKit(); 
 	          }
 	       }; 
-		_editor.setFont(new Font("courier", Font.PLAIN, 12));
+		_editor.setFont(new Font("courier", Font.PLAIN, EZEnvironmentImplem.getMainFontSize() - 2));
 		_editor.getDocument().addDocumentListener(new EditorDocumentListener());
 		_editor.getDocument().addUndoableEditListener(new PrefEntryUndoableEditListener());
 
